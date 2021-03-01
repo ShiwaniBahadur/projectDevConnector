@@ -44,9 +44,10 @@ export class EditProfileComponent implements OnInit {
     bio: new FormControl()
   })
 
-  onSubmit(){
+    onSubmit(){
+      console.log()
+    }
 
-  }
 
 
 
