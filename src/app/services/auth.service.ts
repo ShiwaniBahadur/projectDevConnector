@@ -27,7 +27,6 @@ export class AuthService {
   removeUser(){
     localStorage.removeItem('user');
     this.router.navigate(['/login']);
-    alert("Logged Out");
   }
 
   isAuthenticated(){

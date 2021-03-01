@@ -7,11 +7,11 @@
   <br>
   * = required
   <br> <br>
-  <form>
+  <form [formGroup] = "editForm" (ngSubmit)="onSubmit()">
 
     Select Profile:
 
-    <select class="form-control">
+    <select class="form-control" formControlName="profile">
       <option>Developer</option>
       <option>Junior Developer</option>
       <option>Senior Developer</option>
@@ -23,32 +23,32 @@
 
     <br>
 
-    <input type="text" name ="subject" class="form-control" placeholder="Company*" required>
+    <input type="text" formControlName ="company" class="form-control" placeholder="Company*" required>
     <div class="msg">Could be your own company or one you work for</div>
 
     <br>
 
-    <input type="text" name="email" class="form-control" placeholder="Website*" required>
+    <input type="text" formControlName="website" class="form-control" placeholder="Website*" required>
     <div class="msg">Could be your own or a company website</div>
 
     <br>
 
-    <input type="text" name="email" class="form-control" placeholder="Location*" required>
+    <input type="text" formControlName="location" class="form-control" placeholder="Location*" required>
     <div class="msg">Could be your own or a company website</div>
 
     <br>
 
-    <input type="text" name="email" class="form-control" placeholder="Skills*" required>
+    <input type="text" formControlName="skills" class="form-control" placeholder="Skills*" required>
     <div class="msg">Could be your own or a company website</div>
 
     <br>
 
-    <input type="text" name="email" class="form-control" placeholder="GitHub Username">
+    <input type="text" formControlName="git" class="form-control" placeholder="GitHub Username">
     <div class="msg">Could be your own or a company website</div>
 
     <br>
 
-    <textarea class="form-control" placeholder="text"> </textarea>
+    <textarea class="form-control" placeholder="text" formControlName="bio"> </textarea>
     <div class="msg">Tell us a little about yourself</div>
     <br>
 
@@ -57,15 +57,15 @@
 
     <div *ngIf = "show">
 
-      <input type="text" name="email" class="form-control" placeholder="Twitter URL"> <br>
+      <input type="text" name="twitter" class="form-control" placeholder="Twitter URL"> <br>
 
-      <input type="text" name="email" class="form-control" placeholder="Facebook URL"> <br>
+      <input type="text" name="facebook" class="form-control" placeholder="Facebook URL"> <br>
 
-      <input type="text" name="email" class="form-control" placeholder="LinkedIn URL"> <br>
+      <input type="text" name="linkedin" class="form-control" placeholder="LinkedIn URL"> <br>
 
-      <input type="text" name="email" class="form-control" placeholder="Instagram URL"> <br>
+      <input type="text" name="insta" class="form-control" placeholder="Instagram URL"> <br>
 
-      <input type="text" name="email" class="form-control" placeholder="YouTube URL"> <br>
+      <input type="text" name="utube" class="form-control" placeholder="YouTube URL"> <br>
 
     </div>
 

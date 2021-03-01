@@ -30,7 +30,9 @@ export class DashboardMenuComponent implements OnInit {
     this.routes.navigateByUrl('/add-education')
   }
   onDelete(){
-
+    this.auth.removeUser();
+    this.routes.navigateByUrl('/login');
+    alert("Account Deleted");
   }
 
 }

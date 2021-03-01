@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-add-experience',
@@ -8,9 +9,13 @@ import { Router } from '@angular/router';
 })
 export class AddExperienceComponent implements OnInit {
 
+
   constructor(
-    private routes: Router
-  ) { }
+    private routes: Router,
+    @Inject(DOCUMENT) document:any
+  ) {
+    console.log(document.getElementById('checked'));
+   }
 
   ngOnInit(): void {
 
@@ -19,6 +24,8 @@ export class AddExperienceComponent implements OnInit {
   onBack(){
     this.routes.navigateByUrl('/dashboard');
   }
+
+
 
 
 }
