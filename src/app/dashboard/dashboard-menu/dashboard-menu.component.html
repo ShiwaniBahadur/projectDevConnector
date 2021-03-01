@@ -1,0 +1,54 @@
+<div class="container">
+  <mat-toolbar> Dashboard </mat-toolbar>
+  <br>
+
+  <h1> Welcome {{name}}</h1>
+
+  <button mat-flat-button (click)="onEditProfile()">
+    <mat-icon>mode_edit</mat-icon>
+    Edit Profile
+  </button>
+
+  <button mat-flat-button (click)="onAddExperience()">
+    <mat-icon>work</mat-icon>
+    Add Experience
+  </button>
+
+  <button mat-flat-button (click)="onAddEducation()">
+    <mat-icon>school</mat-icon>
+    Add Education
+  </button>
+
+  <br><br>
+
+  <h1>Experience Credentials</h1>
+  <br>
+  <button mat-flat-button>
+    Company
+  </button>
+  <button mat-flat-button>
+    Titles
+  </button>
+  <button mat-flat-button>
+    Years
+  </button>
+  <br><br>
+  <h1>Education Credentials</h1>
+  <br>
+  <button mat-flat-button>
+    School
+  </button>
+  <button mat-flat-button>
+    Degree
+  </button>
+  <button mat-flat-button>
+    Years
+  </button>
+  <br><br>
+  <button mat-raised-button color="warn" (click)="onDelete()">
+    <mat-icon class="delete">person_remove</mat-icon>
+    Delete my Account
+  </button>
+</div>
+
+

@@ -1,0 +1,17 @@
+.container {
+  padding-top: 30px;
+}
+button {
+  margin-right: 2rem;
+  background-color: rgb(231, 224, 224);
+}
+mat-toolbar {
+  font-size: 2.5rem;
+  color: rgb(139, 139, 48);
+}
+mat-icon {
+  color: rgb(139, 139, 48);
+}
+.delete {
+  color: white;
+}

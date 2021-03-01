@@ -1,0 +1,20 @@
+.msg {
+  text-align: center;
+  color: rgb(41, 155, 37);
+}
+.list {
+  padding-top: 20px;
+  display: block;
+  width: 100%;
+}
+.container {
+  align-items: center;
+}
+table {
+  align-items: center;
+  text-align: center;
+}
+th {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}

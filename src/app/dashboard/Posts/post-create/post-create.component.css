@@ -1,0 +1,32 @@
+mat-card {
+  width: 80%;
+  margin: auto;
+}
+mat-form-field,
+textarea,
+input {
+  width: 100%;
+}
+.main {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+mat-toolbar {
+  background-color: rgb(131, 137, 158);
+}
+h1 {
+  font-size: 3vw;
+  color: rgb(64, 80, 136);
+}
+.container {
+  display: flex;
+}
+p {
+  font-size: 1.2rem;
+  padding: 4px;
+}
+mat-icon {
+  font-size: 1.6rem;
+}

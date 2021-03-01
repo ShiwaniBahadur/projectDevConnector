@@ -1,0 +1,27 @@
+<div class = "main">
+
+
+  <mat-card>
+    <h1> Posts </h1>
+    <br>
+
+    <div class="container">
+      <mat-icon>account_circle</mat-icon>
+      <p>Welcome to the Community</p>
+    </div>
+
+    <mat-toolbar>Say Something.. </mat-toolbar>
+    <br>
+
+    <mat-form-field>
+        <textarea matInput rows='6' placeholder="Create a Post" [(ngModel)]="userMessage"></textarea>
+      </mat-form-field>
+      <button
+      mat-raised-button
+      color="primary"
+      (click)="onAddMessage()">
+      Submit Post
+    </button>
+  </mat-card>
+
+  </div>

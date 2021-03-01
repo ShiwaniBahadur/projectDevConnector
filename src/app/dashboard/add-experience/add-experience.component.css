@@ -1,0 +1,36 @@
+mat-card {
+  width: 80%;
+  margin: auto;
+}
+.jumbotron {
+  margin-top: 5px;
+  font-size: 3rem;
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  height: 1vh;
+  background-color: rgb(131, 137, 158);
+}
+.icon {
+  display: flex;
+}
+p {
+  font-size: 2vw;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+mat-icon {
+  font-size: 5vh;
+}
+input,
+select,
+textarea,
+mat-form-field {
+  width: 60%;
+}
+.mat-flat-button {
+  background-color: rgb(177, 177, 177);
+}
+.mat-raised-button {
+  margin-right: 1vw;
+}

@@ -1,0 +1,16 @@
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.navbar-brand:hover {
+  color: rgb(105, 155, 151);
+}
+.nav-link {
+  font-size: 1.2rem;
+}
+.nav-link:hover {
+  color: rgb(105, 155, 151);
+}
+.main {
+  margin-left: 40vw;
+}

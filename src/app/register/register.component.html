@@ -1,0 +1,107 @@
+<mat-card>
+
+  <br><br>
+  <mat-toolbar>
+    Sign Up
+  </mat-toolbar>
+
+  <br><br>
+
+  <div class="main">
+    <div>
+      <mat-icon >account_circle</mat-icon>
+    </div>
+    <div class="data">
+      Create your Account
+    </div>
+  </div>
+
+  <br>
+
+  <form [formGroup] = "registerForm" (ngSubmit)="onSubmit()">
+
+    <mat-form-field>
+      <input
+      type="text"
+      placeholder="Enter your Name"
+      matInput
+      formControlName="username"
+      [ngClass]="{'is-inavlid':submitted && f.username.errors}">
+    </mat-form-field>
+    <mat-error *ngIf="submitted && f.username.errors">
+      <mat-error *ngIf="f.username.errors?.required">
+        Name Field is Required
+      </mat-error>
+    </mat-error>
+
+    <br><br>
+
+    <mat-form-field>
+      <input
+      type="text"
+      matInput
+      formControlName="useremail"
+      [ngClass]="{'is-inavlid':submitted && f.useremail.errors}"
+      placeholder="Enter your Email Address">
+      </mat-form-field>
+      <mat-error *ngIf="submitted && f.useremail.errors">
+        <mat-error *ngIf="f.useremail.errors?.required">
+          Email Field is Required
+        </mat-error>
+        <mat-error *ngIf="f.useremail.errors?.email">
+          Proper Email Format is Required
+        </mat-error>
+      </mat-error>
+
+      <br><br>
+
+      <mat-form-field>
+        <input
+        type="password"
+        matInput
+        formControlName="password"
+        [ngClass]="{'is-inavlid':submitted && f.password.errors}"
+        placeholder="Enter Password">
+      </mat-form-field>
+      <mat-error *ngIf="submitted && f.password.errors">
+        <mat-error *ngIf="f.password.errors?.required">
+          Password Field is Required
+        </mat-error>
+        <mat-error *ngIf="f.password.errors?.minlength">
+          Password should be greater than 6 characters.
+        </mat-error>
+      </mat-error>
+
+      <br><br>
+
+      <mat-form-field>
+        <input
+        type="password"
+        matInput
+        formControlName="cpassword"
+        [ngClass]="{'is-inavlid':submitted && f.cpassword.errors}"
+        placeholder="Confirm Password">
+      </mat-form-field>
+      <mat-error *ngIf="submitted && f.cpassword.errors">
+        <mat-error *ngIf="f.cpassword.errors?.required">
+          Confirm your Password
+        </mat-error>
+        <mat-error *ngIf="f.cpassword.hasError('mustMatch')">
+          Password Must Match
+        </mat-error>
+      </mat-error>
+
+      <br><br>
+
+      <button type="submit" mat-raised-button color="primary">Register</button>
+      <button type="reset" mat-raised-button color="accent">Reset</button>
+
+      <br><br>
+
+      <div class="text">
+        Already have an account?
+        <a routerLink = "/login">Sign In</a>
+
+      </div>
+  </form>
+</mat-card>

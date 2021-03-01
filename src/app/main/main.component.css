@@ -1,0 +1,36 @@
+.bg {
+  background-image: url("src/assets/apple.jpg");
+  height: 92.5%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  border: 2px solid black;
+}
+.container {
+  align-items: center;
+  text-align: center;
+}
+.head {
+  padding-top: 15vw;
+  font-size: 50px;
+  line-height: 50px;
+  color: rgba(56, 6, 6, 0.863);
+  font-weight: bolder;
+}
+.subhead {
+  padding-top: 1.9vw;
+  font-size: 30px;
+  line-height: 40px;
+  color: rgba(59, 1, 1, 0.863);
+}
+.info {
+  padding-top: 1.9vw;
+  font-size: 25px;
+  color: rgba(59, 1, 1, 0.863);
+  font-weight: 500;
+}
+button {
+  margin-top: 1.3vw;
+  margin-right: 0.6vw;
+}

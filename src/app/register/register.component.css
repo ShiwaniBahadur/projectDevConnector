@@ -1,0 +1,25 @@
+mat-card {
+  width: 80%;
+  margin: auto;
+}
+mat-form-field,
+input {
+  width: 60%;
+}
+mat-toolbar {
+  font-size: 2rem;
+}
+.main {
+  display: flex;
+}
+.data {
+  padding-top: 5px;
+  padding-left: 8px;
+  font-size: 1.3rem;
+}
+mat-icon {
+  font-size: 30px;
+}
+button {
+  margin-right: 10px;
+}

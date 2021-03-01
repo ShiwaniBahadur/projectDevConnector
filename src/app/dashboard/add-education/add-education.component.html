@@ -1,0 +1,54 @@
+<mat-card>
+  <div class="jumbotron">Add your Education</div>
+  <div class="icon">
+    <mat-icon>school</mat-icon>
+    <p> Add any school, bootcamp, etc that you have attended </p>
+  </div>
+  <br>
+  * = required
+  <br> <br>
+  <form>
+
+    <input type="text" name ="subject" class="form-control" placeholder="School or Bootcamp*" required>
+
+    <br>
+
+    <input type="text" name="email" class="form-control" placeholder="Degree or Certificate*" required>
+
+
+    <br><br>
+
+    <mat-form-field appearance="fill">
+      <mat-label>From Date</mat-label>
+      <input matInput [matDatepicker]="picker1" placeholder="mm-dd-yyyy">
+      <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+      <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field>
+
+    <br>
+
+    <mat-checkbox>
+      Current School or Bootcamp
+    </mat-checkbox>
+    <br>
+
+    <mat-form-field appearance="fill">
+      <mat-label>To Date</mat-label>
+      <input matInput [matDatepicker]="picker2" placeholder="mm-dd-yyyy">
+      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+
+    <br><br>
+
+    Program Description:<br>
+    <textarea class="form-control"> </textarea>
+
+    <br><br>
+
+    <button type="submit" mat-raised-button color="primary">Submit</button>
+    <button mat-flat-button (click)="onBack()">Go Back</button>
+  </form>
+
+
+</mat-card>

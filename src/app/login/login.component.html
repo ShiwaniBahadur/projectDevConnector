@@ -1,0 +1,75 @@
+<mat-card>
+
+  <div class="alert alert-warning" role="alert">
+     Login to get more access
+  </div>
+  <br>
+  <mat-toolbar>
+    Sign In
+  </mat-toolbar>
+
+  <br><br>
+
+  <div class="main">
+    <div>
+      <mat-icon >account_circle</mat-icon>
+    </div>
+    <div class="data">
+      Sign In to your Account
+    </div>
+  </div>
+
+  <br>
+
+  <form #userform="ngForm"
+  name="form"
+  (ngSubmit) = "userform.form.valid && onLogin(userform)" novalidate>
+
+    <mat-form-field>
+      <input type="text"
+      name="username"
+      placeholder="User Name"
+      matInput
+      required
+      [(ngModel)]="users.username"
+      #username="ngModel"
+      [ngClass]="{'is-invalid':userform.submitted && username.invalid}">
+    </mat-form-field>
+
+    <mat-error *ngIf = "userform.submitted && username.invalid">
+      <mat-error *ngIf = "username.hasError('required')">
+        Name is Required
+      </mat-error>
+    </mat-error>
+
+      <br><br>
+
+      <mat-form-field>
+        <input
+        type="password"
+        matInput
+        name="password"
+        placeholder="Enter Password"
+        [(ngModel)]="users.userpassword"
+        required
+        #password = "ngModel"
+        [ngClass] = "{'is-inavlid':userform.submitted && password.invalid}">
+      </mat-form-field>
+      <mat-error *ngIf="userform.submitted && password.invalid">
+        <mat-error *ngIf = "password.hasError('required')">
+          Password Field is Required
+        </mat-error>
+      </mat-error>
+      <br><br>
+
+      <button type="submit" mat-raised-button color="primary">Login</button>
+
+      <br><br>
+
+      <div class="text">
+        Don't have an account?
+        <a routerLink = "/register">Sign Up</a>
+
+      </div>
+  </form>
+</mat-card>

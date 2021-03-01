@@ -1,0 +1,79 @@
+<mat-card>
+  <div class="jumbotron">Create your Profile</div>
+  <div class="icon">
+    <mat-icon>account_circle</mat-icon>
+    <p> Let's get some information to make your profile stand out </p>
+  </div>
+  <br>
+  * = required
+  <br> <br>
+  <form>
+
+    Select Profile:
+
+    <select class="form-control">
+      <option>Developer</option>
+      <option>Junior Developer</option>
+      <option>Senior Developer</option>
+      <option>Manager</option>
+      <option>Student or Learning</option>
+      <option>Instructor or Teacher</option>
+      <option>Others</option>
+    </select>
+
+    <br>
+
+    <input type="text" name ="subject" class="form-control" placeholder="Company*" required>
+    <div class="msg">Could be your own company or one you work for</div>
+
+    <br>
+
+    <input type="text" name="email" class="form-control" placeholder="Website*" required>
+    <div class="msg">Could be your own or a company website</div>
+
+    <br>
+
+    <input type="text" name="email" class="form-control" placeholder="Location*" required>
+    <div class="msg">Could be your own or a company website</div>
+
+    <br>
+
+    <input type="text" name="email" class="form-control" placeholder="Skills*" required>
+    <div class="msg">Could be your own or a company website</div>
+
+    <br>
+
+    <input type="text" name="email" class="form-control" placeholder="GitHub Username">
+    <div class="msg">Could be your own or a company website</div>
+
+    <br>
+
+    <textarea class="form-control" placeholder="text"> </textarea>
+    <div class="msg">Tell us a little about yourself</div>
+    <br>
+
+    <button mat-flat-button (click)="toggle()">Add Social Media Links</button> Optional
+    <br><br>
+
+    <div *ngIf = "show">
+
+      <input type="text" name="email" class="form-control" placeholder="Twitter URL"> <br>
+
+      <input type="text" name="email" class="form-control" placeholder="Facebook URL"> <br>
+
+      <input type="text" name="email" class="form-control" placeholder="LinkedIn URL"> <br>
+
+      <input type="text" name="email" class="form-control" placeholder="Instagram URL"> <br>
+
+      <input type="text" name="email" class="form-control" placeholder="YouTube URL"> <br>
+
+    </div>
+
+    <br>
+
+    <button type="submit" mat-raised-button color="primary">Submit</button>
+    <button mat-flat-button (click)="onBack()">Go Back</button>
+  </form>
+
+
+</mat-card>

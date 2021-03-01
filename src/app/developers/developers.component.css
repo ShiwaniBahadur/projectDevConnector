@@ -1,0 +1,24 @@
+mat-card {
+  width: 80%;
+  margin: auto;
+}
+.jumbotron {
+  margin-top: 5px;
+  font-size: 3rem;
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  height: 1vh;
+  background-color: rgb(131, 137, 158);
+}
+.icon {
+  display: flex;
+}
+p {
+  font-size: 1rem;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+mat-icon {
+  font-size: 5vh;
+}
