@@ -14,6 +14,7 @@ export class LogoutComponent implements OnInit {
 
   ngOnInit(): void {
      this.authservice.removeUser();
+     this.authservice.isAuthenticate=false;
     alert("Logged Out");
   }
 

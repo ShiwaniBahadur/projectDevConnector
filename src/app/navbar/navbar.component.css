@@ -12,5 +12,8 @@
   color: rgb(105, 155, 151);
 }
 .main {
+  margin-left: 60vw;
+}
+.mainTwo {
   margin-left: 40vw;
 }

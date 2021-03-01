@@ -32,6 +32,7 @@ export class DashboardMenuComponent implements OnInit {
   onDelete(){
     this.auth.removeUser();
     this.routes.navigateByUrl('/login');
+    this.auth.isAuthenticate=false;
     alert("Account Deleted");
   }
 

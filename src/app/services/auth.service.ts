@@ -6,6 +6,8 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
+  isAuthenticate = false;
+
   constructor(
     private router:Router
   ) { }
@@ -31,5 +33,8 @@ export class AuthService {
 
   isAuthenticated(){
     return localStorage.getItem('user')!=null;
+  }
+  userLogin(){
+    this.isAuthenticate = true;
   }
 }
